@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELtest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+            color: #333333;
+        }
+        header {
+            background-color: #ffc6d3;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+            padding-top: 60px; /* To prevent overlap with the fixed top navigation */
+        }
+        header h1 {
+            color: #3a4f7a;
+            margin: 0;
+            display: inline;
+        }
+        header p {
+            font-weight: bold;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #3a4f7a;
+            font-weight: 700;
+        }
+        .container {
+            padding: 80px 20px 80px; /* Adjust bottom padding to prevent content overlap */
+            max-width: 800px;
+            margin: auto;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #3a4f7a;
+            margin-bottom: 10px;
+        }
+        .section p {
+            text-align: justify;
+        }
+        .button, .button-secondary {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button {
+            background-color: #0095f6;
+        }
+        .button-secondary {
+            background-color: #fea1bf;
+        }
+        footer {
+            background-color: #3a4f7a;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: calc(100% - 40px); /* Reduce width to allow space for button visibility */
+            margin: 0 20px; /* Center the footer horizontally */
+            bottom: 0;
+            z-index: 1000;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        .phone-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        .video-embed {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#instagram">Instagram</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="#platform">Plataforma</a>
+        <a href="#contact">Contacto</a>
+        <a href="#surveys">Encuestas</a>
+    </nav>
+    <header>
+        <h1>TELtest</h1>
+        <p><strong>Educación científico-sanitaria para Técnicos Especialistas de Laboratorio (TEL) de diagnóstico Clínico y Biomédico</strong></p>
+    </header>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                Bienvenidos a TELtest, tu plataforma educativa dedicada a Técnicos Especialistas de Laboratorio. <br><br>
+                Estamos especializados en analizar y compartir preguntas de exámenes oficiales TEL, aportando explicaciones detalladas y recursos de estudio. <br><br>
+                Si eres Técnico Especialista de Laboratorio de diagnóstico Clínico y Biomédico, este es tu sitio.
+            </p>
+        </section>
+        <section id="instagram" class="section">
+            <h2>Instagram</h2>
+            <p>Síguenos en Instagram para ver nuestras publicaciones semanales con preguntas de exámenes oficiales y sus respuestas explicadas.</p>
+            <a class="button" href="https://www.instagram.com/teltest_oficial/" target="_blank">Síguenos en Instagram</a>
+            <a href="https://www.instagram.com/teltest_oficial/" target="_blank">
+                <img src="captura_IG_TELtest_2.png" alt="Instagram Mockup" class="phone-image">
+            </a>
+        </section>
+        <section id="newsletter" class="section">
+            <h2>Newsletter</h2>
+            <p>Suscríbete a nuestra newsletter mensual gratuita para recibir noticias sobre las más interesantes innovaciones científicas, preguntas de exámenes oficiales TEL y documentos gratuitos de estudio.</p>
+            <a class="button" href="http://eepurl.com/iD16GQ" target="_blank">Suscribirse a la Newsletter</a>
+            <div class="video-embed">
+                <iframe src="https://www.instagram.com/reel/Cz4XLYaNrdS/embed" width="400" height="480" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="platform" class="section">
+            <h2>Plataforma de Estudio</h2>
+            <p>Próximamente lanzaremos una plataforma de estudio online que te permitirá acceder a todas las preguntas de exámenes TEL oficiales categorizadas por exámenes y temas junto con las respuestas correctas, explicaciones, vídeos y más contenido educativo. ¡Sigue atent@ a nuestras redes! 😊</p>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contacto</h2>
+            <p>Para más información, contáctanos en <a href="mailto:teltest.informacion@gmail.com">teltest.informacion@gmail.com</a>.</p>
+        </section>
+        <section id="surveys" class="section">
+            <h2>Encuestas</h2>
+            <p>Participa en nuestras encuestas periódicas para ayudarnos a mejorar. ¡Tu opinión es importante para nosotros!</p>
+            <a class="button-secondary" href="https://docs.google.com/forms/d/1YI6u7Imquwy4i9ZL_ehPY8p4p2_McHvwacHQD3vjmlg/prefill" target="_blank">Breve encuesta</a>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 TELtest Oficial. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/teltest_oficial/" target="_blank">Instagram</a> |
+            <a href="https://es.linkedin.com/in/aleix-b-fabregat-bolufer-110462282/es" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
