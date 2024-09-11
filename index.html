@@ -46,18 +46,12 @@
             text-align: center;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             z-index: 1000;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around; /* Add space between the links */
-            align-items: center;
         }
         nav a {
-            margin: 5px 10px; /* Add more space between the links */
+            margin: 0 15px;
             text-decoration: none;
             color: #3a4f7a;
             font-weight: 700;
-            display: block; /* Ensure full clickable area on smaller screens */
-            white-space: nowrap; /* Prevent text from wrapping */
         }
         .container {
             padding: 80px 20px 80px; /* Adjust bottom padding to prevent content overlap */
@@ -114,25 +108,6 @@
             display: block;
             margin: 20px auto;
             text-align: center;
-        }
-
-        /* Media Query for small screens (mobile) */
-        @media (max-width: 600px) {
-            nav {
-                flex-direction: column; /* Stack links vertically */
-            }
-            nav a {
-                font-size: 14px;
-                margin: 10px 0; /* Add more space between the links */
-            }
-
-            header h1 {
-                font-size: 24px; /* Reduce the font size for smaller screens */
-            }
-
-            header p {
-                font-size: 14px; /* Adjust paragraph size */
-            }
         }
     </style>
 </head>
