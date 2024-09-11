@@ -47,15 +47,17 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             z-index: 1000;
             display: flex;
-            flex-wrap: wrap; /* Allow items to wrap if needed */
-            justify-content: center; /* Ensure items are centered */
+            flex-wrap: wrap;
+            justify-content: space-around; /* Add space between the links */
+            align-items: center;
         }
         nav a {
-            margin: 5px; /* Reduce margin to allow better spacing */
+            margin: 5px 10px; /* Add more space between the links */
             text-decoration: none;
             color: #3a4f7a;
             font-weight: 700;
             display: block; /* Ensure full clickable area on smaller screens */
+            white-space: nowrap; /* Prevent text from wrapping */
         }
         .container {
             padding: 80px 20px 80px; /* Adjust bottom padding to prevent content overlap */
@@ -116,9 +118,12 @@
 
         /* Media Query for small screens (mobile) */
         @media (max-width: 600px) {
+            nav {
+                flex-direction: column; /* Stack links vertically */
+            }
             nav a {
-                margin: 5px 0; /* Stack the links vertically on smaller screens */
-                font-size: 14px; /* Adjust font size for better readability on small screens */
+                font-size: 14px;
+                margin: 10px 0; /* Add more space between the links */
             }
 
             header h1 {
